@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            background-image: url('assets/ash2.jpg'); /* Background image */
+            background-size: cover;
+            background-position: center;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .font-options {
+            margin: 10px;
+            padding: 10px;
+            background-color: white;
+            color:pink;
+            border-radius: 5px;
+            text-align: center;
+            font-size: x-large;
+        }
+        .container {
+            background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 600px; /* Max width for container */
+            position: relative; /* For absolute positioning of images */
+        }
+        .highlight {
+            font-size: larger;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+        .side-image {
+            width: 50px; /* Image width */
+            height: auto;
+            position: absolute; /* For precise positioning */
+        }
+        .left-image {
+            left: -60px; /* Position the left image */
+            top: 0;
+        }
+        .right-image {
+            right: -60px; /* Position the right image */
+            top: 0;
+        }
+        button {
+            margin-top: 20px; /* Space above the button */
+            padding: 10px 20px;
+            background-color: lightblue;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: larger; /* Increase font size */
+        }
+        button:hover {
+            background-color: deepskyblue; /* Hover effect */
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Life of GOD</h1>
+    <p>Myself Ashish from Vizag.<br>
+    I am pursuing my bachelor's degree at Amrita Vishwa Vidyapeetham, Amritapuri in the Computer Science branch.<br>
+    From childhood, I have been very interested in anything related to technology.<br>
+    I also enjoy watching anime.<br><div class="font-options">one more thing i am single🌚</div> 
+    </p>
+    <p class="highlight">
+        <img src="assets/left-image.png" alt="Left Image" class="side-image left-image" onerror="this.style.display='none';">
+        If you are a girl, send hi to my Insta.<br>click on the button below to send hi🌚
+        <img src="assets/right-image.png" alt="Right Image" class="side-image right-image" onerror="this.style.display='none';">
+    </p>
+    <button onclick="openPage()">send hi</button>
+</div>
+
+<script>
+    function openPage() {
+        window.location.href = 'https://www.instagram.com/_ashish_karanam_?igsh=MWgxNXd5ZzkxbnR2Mg=='; // Replace with your actual HTML page path
+    }
+</script>
+
+</body>
+</html>

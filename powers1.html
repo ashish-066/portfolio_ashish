@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills Display</title>
+    <style>
+        body {
+            color: white;
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+            background-image: url('assets/Skills-For-Jobs-In-Hot-Demand-1.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        .container {
+            display: flex;
+            align-items: center; 
+            width: 80%;
+            max-width: 1000px;
+        }
+        .column {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 25%;
+            overflow: hidden; /* Hide overflow to create scrolling effect */
+            height: 300px; /* Set a height for the scrolling area */
+        }
+        img {
+            width: 100%;
+            height: auto;
+            margin: 10px 0;
+            border-radius: 8px;
+            animation: scroll 5s linear infinite; /* Apply scrolling animation */
+        }
+        @keyframes scroll {
+            0% { transform: translateY(0); }
+            100% { transform: translateY(-100%); }
+        }
+        .text-container {
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            flex: 1;
+        }
+        h1, p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+<main class="container">
+    <div class="column">
+        <img src="assets/C_Logo.png" alt="C Logo" onerror="this.style.display='none';">
+        <img src="assets/th.jpeg" alt="Python" onerror="this.style.display='none';">
+    </div>
+    
+    <div class="text-container">
+        <h1>There are the skills that God has</h1>
+        <p>I am good at C, MySQL, Pandas and working on Python,html,css and javacsript</p>
+    </div>
+    
+    <div class="column">
+        <img src="assets/MySQL-Logo.png" alt="MySQL Logo" onerror="this.style.display='none';">
+        <img src="assets/ash.png" alt="Pandas" onerror="this.style.display='none';">
+    </div>
+</main>
+
+</body>
+</html>

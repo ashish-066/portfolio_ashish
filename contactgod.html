@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Title</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column; /* Stack elements vertically */
+            align-items: center; /* Center horizontally */
+            justify-content: center; /* Center vertically */
+            height: 100vh; /* Full viewport height */
+            background-image: url('assets/depositphotos_79773952-stock-photo-contact-me-text-write-on.jpg'); /* Background image */
+            background-size: cover; /* Cover the entire viewport */
+            background-position: center; /* Center the image */
+            margin: 0; /* Remove default margin */
+        }
+        h1 {
+            color: green;
+            text-align: center; /* Center text */
+            font-size: 36px; /* Increase font size */
+        }
+        p {
+            color: black; /* Change paragraph color */
+            text-align: center; /* Center text */
+            font-size: 20px; /* Increase font size */
+        }
+        button {
+            margin: 10px 0; /* Space between buttons */
+            padding: 15px 30px; /* Increased padding for button size */
+            background-color: royalblue; /* Button color */
+            border: none;
+            border-radius: 10px; /* Rounded corners */
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            width: 250px; /* Set a consistent width */
+            font-size: 18px; /* Increased font size */
+            color: white; /* Text color inside button */
+        }
+        button img {
+            width: 25px; /* Adjusted size of the images */
+            height: auto;
+            margin-right: 10px; /* Space between image and text */
+        }
+        button:hover {
+            background-color: deepskyblue; /* Change color on hover */
+        }
+    </style>
+</head>
+<body>
+
+<h1>Say Hi to God</h1>
+
+<button id="button1">
+    <img src="assets/instagram.png" alt="Instagram">God's Insta
+</button>
+<button id="button2" onclick="callNumber()">
+    <img src="assets/telephone.png" alt="Phone">Call God
+</button>
+<button id="button3" onclick="sendEmail()">
+    <img src="assets/1000_F_387351313_RLxiiB3856pV9T0PLKHeYXjQ1EYROlZf.jpg" alt="Gmail">Send a mail to God
+</button>
+
+<script>
+    document.getElementById('button1').addEventListener('click', function() {
+        window.location.href = 'https://www.instagram.com/_ashish_karanam_?igsh=MWgxNXd5ZzkxbnR2Mg==';
+    });
+
+    function callNumber() {
+        window.location.href = 'tel:+919866651158'; // Indian number example
+    }
+
+    function sendEmail() {
+        window.location.href = 'mailto:ashishkaranam06@gmail.com';
+    }
+</script>
+
+</body>
+</html>
