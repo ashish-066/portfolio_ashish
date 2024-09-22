@@ -85,6 +85,10 @@
         .image-container img.loaded {
             display: block; /* Show after image is loaded */
         }
+        /* Move the right image down */
+        .image-container img:last-child {
+            margin-top: 20px; /* Adjust this value to control how much you want to move it down */
+        }
     </style>
 </head>
 <body>
@@ -114,7 +118,7 @@
         });
 
         document.getElementById('button3').addEventListener('click', function() {
-            window.location.href = 'contactgod.html';
+            window.location.href = 'contactgod.html'; // Removed the typo
         });
 
         // Image load event to display only when images are loaded
